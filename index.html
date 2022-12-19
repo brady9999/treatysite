@@ -1,0 +1,120 @@
+<!--
+       Name:Brady Genik
+       Course: Software Development 20S
+       School: (PTEC)
+       Date Last Modified:12/14/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet/main.css" />
+    <title>Learn About Treaty 1 Territories</title>
+    <!--adds an image to the title bar using a link tag with a height of 100% and a width of 100%-->
+    <link rel="shortcut icon" href="/images/title-bar-image.png" height="100%" width="100%" />
+    <style></style>
+  </head>
+  <body>
+    <!--adds the treaty 1 logo to the top left of the heading with a height of 150 and a width of 300-->
+    <header>
+      <img src="/images/treaty-1-img.jfif.png " alt="treaty 1 logo" height="150" width="300" />
+    </header>
+    <!--creates a navagation bar underneath the header using CSS (it doesnt take you anywhere when you click the buttons)-->
+    <nav id="top-nav">
+      <ul>
+        <li><a href="index.html" id="active">Home Page</a></li>
+        <li><a href="history.html">histroy of treaty 1</a></li>
+        <li><a href="https://native-land.ca/">interactive treaty map</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!--used to add the main image that seperates the headder from the main with a height od 700 and a width of 100%-->
+      <div id="banner-image">
+        <img
+          src="/images/main image.jpeg"
+          alt="6 people standing in a semi-circle in a field with an indegonous teacher talking"
+          height="700"
+          width="100%"
+        />
+      </div>
+      <!--adds the treaty 1 land acknowledgement to my website -->
+      <div id="land-ack">
+        <h1>Land Acknowledgement</h1>
+        <p>
+          We acknowledge we are gathered on Treaty 1 Territory and that Manitoba is located on the
+          Treaty Territories and ancestral lands of the Anishinaabeg, Anishininewuk, Dakota Oyate,
+          Denesuline and Nehethowuk Nations. We acknowledge Manitoba is located on the Homeland of
+          the Red River Métis. We acknowledge northern Manitoba includes lands that were and are the
+          ancestral lands of the Inuit. We respect the spirit and intent of Treaties and Treaty
+          Making and remain committed to working in partnership with First Nations, Inuit and Métis
+          people in the spirit of truth, reconciliation and collaboration.
+        </p>
+      </div>
+      <!--header above the infomation-->
+      <h2 id="Mainheader">Treaty 1</h2>
+      <!--puts all the infomation in a group on
+       the left side of the webpage using an section tag-->
+      <section id="questions">
+        <h3>First nation communities in Treaty 1</h3>
+        <p>list of communities</p>
+        <ul>
+          <li>Brokenhead Ojibway</li>
+          <li>Sagkeeng</li>
+          <li>Long Plain</li>
+          <li>Peguis</li>
+          <li>Roseau River Anishinabe</li>
+          <li>Sandy Bay and Swan Lake</li>
+        </ul>
+        <h3>Who signed the treaty</h3>
+        <p>
+          The treaty was signed by the Anishinaabe, the Muskegon Cree Peoples and the Crown. the
+          negotiations happend over the span of eight days was led by governor archibald and his
+          commissioner Wemyss Simpson.
+        </p>
+        <h3>The first treaties</h3>
+        <p>
+          Treaty 1 along with treaty 2 were the first two of the eleven treaties. Treaty one was
+          signed on August 3, 1871.
+        </p>
+      </section>
+      <!--adds the treaty map to the right side of the webpages
+       using an span tag to put the image next to the text-->
+      <span id="treaty-map">
+        <img src="/images/treaty map.png" alt="Treaty Maps in Manitoba" height="500" width="400" />
+      </span>
+      <br />
+      <br />
+      <!--adds a you tube video to the right side of the 
+      webpage under the treaty maps using an iframe tag with a height of 560 and a width of 315-->
+      <div class="youtube-videos">
+        <h4>Youtube videos about treaty 1</h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bSwCmJ30LPM"
+          title="YouTube video
+          player"
+          frameborder="0"
+          allow="encrypted-media; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img src="/images/treaty-1-flag.png" alt="treaty 1 flag" height="300" width="500" />
+      </div>
+    </main>
+    <footer>
+      <!-- adds the sourses of the website to the footer -->
+      <p>Sources:</p>
+      <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+        >Canadian encyclopedia, Treaties 1 and 2</a
+      >
+      <br />
+      <a
+        href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/#:~:text=There%20are%20seven%20First%20Nations%20that%20were%20part,the%20traditional%20names%20of%20these%20First%20Nations%20%29."
+        >Winnipeg vital signs, why we recognize Winnipeg is on Treaty 1 territory
+      </a>
+    </footer>
+  </body>
+</html>
