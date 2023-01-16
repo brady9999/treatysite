@@ -78,6 +78,7 @@ header {
   word-spacing: 0.08rem;
   margin-top: 5%;
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 p.text-block-author {
   padding: 1rem;
