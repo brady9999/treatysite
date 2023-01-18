@@ -2,7 +2,7 @@
        Name:Brady Genik
        Course: Software Development 20S
        School: (PTEC)
-       Date Last Modified:12/14/2022
+       Date Last Modified:1/18/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +13,152 @@
     <title>Treaty 1 Peoples</title>
     <link rel="stylesheet" href="/stylesheet/main.css" />
     <link rel="shortcut icon" href="/images/title-bar-image.png" height="100%" width="100%" />
+    <style>
+      /* makes the swatches have a block display position absolute and 10% from the top and 150px from the right
+         code for swatches from blog.hubspot.com
+      */
+      .swatch {
+        display: block;
+        text-align: right;
+        position: absolute;
+        top: 10%;
+        right: 150px;
+      }
+      .swatch div {
+        width: 50px;
+        height: 90px;
+        position: absolute;
+        text-align: right;
+        box-sizing: border-box;
+        transform-origin: center 90%;
+
+        border: #000000 1px solid;
+
+        transform: rotate(0deg);
+      }
+
+      /*
+       adds colors to the moving swatches and names the speed and angle that the swatches will become
+      */
+      .swatch div:nth-child(1) {
+        background-color: #000000;
+        animation: swatch-purple-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .swatch div:nth-child(2) {
+        background-color: #bbbbba;
+        animation: swatch-blue-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .swatch div:nth-child(3) {
+        background-color: #8b542f;
+        animation: swatch-green-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .swatch div:nth-child(4) {
+        background-color: #195a7d;
+        animation: swatch-yellow-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .swatch div:nth-child(5) {
+        background-color: #0c6937;
+        animation: swatch-orange-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .swatch div:nth-child(6) {
+        background-color: #ffce00;
+        animation: swatch-red-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      /* 
+      shows that for example that the purple swatch will turn 0deg at 0% and -65deg at 70% 
+      */
+      @keyframes swatch-purple-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(-65deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes swatch-blue-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(-40deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes swatch-green-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(-15deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes swatch-yellow-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(15deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes swatch-orange-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(40deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes swatch-red-motion {
+        0% {
+          transform: rotate(0deg);
+        }
+        30%,
+        70% {
+          transform: rotate(65deg);
+        }
+        90%,
+        10% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="mainheader">
       <h1>Treaty 1 Peoples</h1>
+      <!--each div is one of the swatches for the animation at the top right corner of the header-->
+      <div class="swatch">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </header>
     <nav id="top-nav">
       <ul>
@@ -47,7 +189,7 @@
       <p class="text-block-author">Author: Brady Genik ~ January 16, 2023</p>
     </section>
     <main>
-      <!--creates the main text section of the webpage it boldens the names of the diffrent things-->
+      <!--creates the main text section of the webpage it boldens the names of the headings-->
       <section class="main-text">
         <h2>Peoples of Treaty 1</h2>
         <div class="names">
@@ -113,6 +255,7 @@
           Headingley, mainly consists of commercial development.
         </p>
       </section>
+
       <div id="images">
         <!--add an image of a treaty one's communities flags and or logos to the webpage with a height of 185 and a width of 95%.
             and to float to the right-->
@@ -126,9 +269,9 @@
       </div>
     </main>
     <footer>
-      <p><small>&#169; Brady Genik</small></p>
+      <p><small>&#169; Copy right Brady Genik</small></p>
       <p>sources and references</p>
-      <a href="https://treaty1.ca"> - Click this link to go to Treaty one's website</a>
+      <a href="https://treaty1.ca/">this link take you to Treaty ones's Webpage</a>
     </footer>
   </body>
 </html>

@@ -18,6 +18,7 @@ h1 {
 /* creates a header at the top of the page to display the <h1> tag and change the background color to #122e35
 the margin to 10px, padding to 14px 16px, font color white*/
 header {
+  position: relative;
   background-color: #036280;
   margin: 10;
   padding: 14px 16px;
